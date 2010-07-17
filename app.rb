@@ -9,6 +9,7 @@ require_relative "lib/config"
 require_relative "lib/models"
 require_relative "lib/path"
 require_relative "lib/overrides"
+require_relative "lib/tilt/scss"
 
 set :cache_enabled, Nesta::Config.cache
 
@@ -78,8 +79,8 @@ helpers do
     super(template, render_options.merge(options), locals)
   end
   
-  def sass(template, options = {}, locals = {})
-    render_options = Nesta::Overrides.render_options(template, :sass)
+  def scss(template, options = {}, locals = {})
+    render_options = Nesta::Overrides.render_options(template, :scss)
     super(template, render_options.merge(options), locals)
   end
   
@@ -123,7 +124,7 @@ Nesta::Overrides.load_local_app
 
 get "/css/:sheet.css" do
   content_type "text/css", :charset => "utf-8"
-  cache sass(params[:sheet].to_sym)
+  cache scss(params[:sheet].to_sym)
 end
 
 get "/" do
