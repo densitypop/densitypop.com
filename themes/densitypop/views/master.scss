@@ -16,6 +16,9 @@ header {
   h1 {
     font-style: italic;
   }
+  .logo-iphone {
+    display: none;
+  }
 }
 
 nav {
@@ -61,6 +64,34 @@ nav {
         background-color: $dark-red-color;
         background: url(/images/button-gradient.png) top left repeat-x,
                     url(/images/matte-button-contact.png);
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  header {
+    .logo {
+      display: none;
+    }
+    .logo-iphone {
+      display: block;
+    }
+
+
+    h1 {
+      font-size: 12px;
+      margin-left: 20px;
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        float: none;
+        width: 220px;
+        margin-bottom: 20px;
       }
     }
   }
