@@ -6,5 +6,5 @@
 #
 # Put your assets in public/densitypop.
 #
-# use Rack::Static, :urls => ["/densitypop"], :root => "themes/densitypop/public"
+use Rack::Static, :urls => ["/images"], :root => "themes/densitypop/public"
 
