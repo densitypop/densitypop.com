@@ -69,48 +69,6 @@ nav {
   }
 }
 
-
-@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-
-  body {
-    margin-top: 15px;
-  }
-  header {
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-    a {
-      text-align: center;
-    }
-    .logo {
-      display: none;
-    }
-    .logo-iphone {
-      text-align: center;
-      margin: 0 auto;
-      display: block;
-    }
-
-    h1 {
-      font-size: 16px;
-      margin-bottom: 30px;
-    }
-  }
-
-  nav {
-    margin: 0 auto;
-    ul {
-      margin: 0 auto;
-      width: 220px;
-      li {
-        float: none;
-        width: 220px;
-        margin-bottom: 20px;
-      }
-    }
-  }
-}
-
 h1 {
   font-family: LaptureWeb-Display;
   font-size: 36px;
