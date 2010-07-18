@@ -70,24 +70,37 @@ nav {
 }
 
 
-@media screen and (max-width: 650px) {
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+
+  body {
+    padding: 16px;
+  }
   header {
+    margin: 0 auto;
+    width: 62.5%;
+    text-align: center;
+    a {
+      text-align: center;
+    }
     .logo {
       display: none;
     }
     .logo-iphone {
+      text-align: center;
       display: block;
     }
 
-
     h1 {
       font-size: 12px;
-      margin-left: 20px;
     }
   }
 
   nav {
+    margin: 0 auto;
+    width: 62.5%;
     ul {
+      margin: 0 auto;
+      width: 220px;
       li {
         float: none;
         width: 220px;
