@@ -34,7 +34,7 @@ nav {
       -webkit-border-radius: 5px;
       -webkit-box-shadow: 2px 2px 3px black;
       border: 1px solid $almost-white-color;
-      a:link, a:active {
+      a:link, a:active, a:visited {
         display: block;
         font-family: FacitWeb;
         width: 100%;
@@ -51,7 +51,7 @@ nav {
         background-color: $light-blue-color;
         background: url(/images/button-gradient.png) top left repeat-x,
                     url(/images/matte-button-speaking.png);
-        a:link, a:active {
+        a:link, a:active, a:visited {
           color: #222;
         }
       }
@@ -73,11 +73,11 @@ nav {
 @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
 
   body {
-    padding: 16px;
+    margin-top: 15px;
   }
   header {
     margin: 0 auto;
-    width: 62.5%;
+    width: 100%;
     text-align: center;
     a {
       text-align: center;
@@ -87,17 +87,18 @@ nav {
     }
     .logo-iphone {
       text-align: center;
+      margin: 0 auto;
       display: block;
     }
 
     h1 {
-      font-size: 12px;
+      font-size: 16px;
+      margin-bottom: 30px;
     }
   }
 
   nav {
     margin: 0 auto;
-    width: 62.5%;
     ul {
       margin: 0 auto;
       width: 220px;
