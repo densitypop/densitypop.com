@@ -6,3 +6,4 @@ config/config.yml
 config/deploy.rb
 db/*.db
 public/cache
+tmp
