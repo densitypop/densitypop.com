@@ -14,7 +14,7 @@ $almost-white-color: #fafafa;
 
 
 body {
-  background: white url(/images/body-gradient.png) repeat-x repeat-y;
+  background: white url(/images/body-gradient.png) repeat-x;
   font-size: 100%;
   @include sans-serif-font;
 }
