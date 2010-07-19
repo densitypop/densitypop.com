@@ -4,12 +4,12 @@ require "builder"
 require "haml"
 require "sass"
 
-require_relative "lib/cache"
-require_relative "lib/config"
-require_relative "lib/models"
-require_relative "lib/path"
-require_relative "lib/overrides"
-require_relative "lib/tilt/scss"
+require File.join(File.dirname(__FILE__), *%w[lib cache])
+require File.join(File.dirname(__FILE__), *%w[lib config])
+require File.join(File.dirname(__FILE__), *%w[lib models])
+require File.join(File.dirname(__FILE__), *%w[lib path])
+require File.join(File.dirname(__FILE__), *%w[lib overrides])
+require File.join(File.dirname(__FILE__), *%w[lib tilt scss])
 
 set :cache_enabled, Nesta::Config.cache
 
