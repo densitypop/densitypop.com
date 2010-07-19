@@ -15,23 +15,36 @@
     %li.contact
       %a(href="/contact") Contact
 %footer
+  %aside
+    %h4 Inspiration
+    %ul
+      %li
+        %a(href="http://www.37signals.com")
+          %img(src="/images/37signals-logo.png" alt="Inspired by 37signals")
+      %li
+        %a(href="http://www.leandog.com")
+          %img(src="/images/leandog-logo.png" alt="Inspired by LeanDog")
+      %li
+        %a(href="http://www.bradcolbow.com")
+          %img(src="/images/thebrads-logo.png" alt="Inspired by The Brads")
+      %li
+        %a(href="http://www.designinginteractive.com")
+          %img(src="/images/di-logo.png" alt="Inspired by Designing Interactive")
   %p.contact
     %strong densitypop
   %p 4211 W. 215th St.
   %p Fairview Park, OH 44126
   %p 440.249.0581
-  %h4 Inspiration
-  %ul
-    %li
-      %a(href="http://www.37signals.com") 37signals
-    %li
-      %a(href="http://www.leandog.com") LeanDog
-    %li
-      %a(href="http://www.bradcolbow.com") The Brads
   %p
     %small
       &copy;2010
       %strong densitypop
-  %p built on Ruby 1.9.2, using the Nesta CMS for developers
-  %p hosted on Heroku
+  %p
+    = surround "built on ", "," do
+      %a(href="http://www.ruby-lang.org" title="Ruby Rocks!") Ruby 1.9.2
+    = precede "using the " do
+      %a(href="http://effectif.com/nesta" title="Nesta is awesome too!") Nesta CMS for developers
+  %p
+    = precede "hosted on " do
+      %a(href="http://www.heroku.com" title="Heroku is teh best Ruby host") Heroku
   %p a product of Cleveland, OH

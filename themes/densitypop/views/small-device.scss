@@ -26,14 +26,31 @@
 
   nav {
     margin: 0 auto;
+    padding-bottom: 60px;
     ul {
       margin: 0 auto;
       width: 220px;
+      min-width: 220px;
       li {
         float: none;
         width: 220px;
         margin-bottom: 20px;
       }
     }
+  }
+
+  footer {
+    padding: 5px 20px;
+    text-align: right;
+    aside {
+      float: left;
+    }
+    p {
+      font-size: 12px;
+    }
+    p:nth-child(5) {
+        margin-bottom: 190px;
+    }
+
   }
 }

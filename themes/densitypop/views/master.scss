@@ -4,9 +4,36 @@ $dark-blue-color:    #203030;
 $dark-red-color:     #302010;
 $almost-white-color: #fafafa;
 
+@mixin sans-serif-font {
+  font-family: FacitWeb, Helvetica, sans-serif;
+}
+
+@mixin serif-font {
+  font-family: LaptureWeb-Display, Georgia, serif;
+}
+
+
 body {
   background: white url(/images/body-gradient.png) repeat-x repeat-y;
-  font: FacitWeb 100%;
+  font-size: 100%;
+  @include sans-serif-font;
+}
+
+p {
+  line-height: 1.2em;
+  @include serif-font;
+}
+
+a {
+  color: $medium-red-color;
+  @include sans-serif-font;
+  text-decoration: none;
+  &:visited, &:active {
+    color: $medium-red-color;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 header {
@@ -23,10 +50,14 @@ header {
 
 nav {
   margin-left: 4.1666667%;
+  padding-bottom: 295px;
   ul {
+    min-width: 797px;
     li {
       float: left;
       width: 22.7083333%;
+      max-width: 220px;
+      min-width: 180px;
       margin-right: 2.0833333%;
       text-align: center;
       height: 65px;
@@ -36,7 +67,7 @@ nav {
       border: 1px solid $almost-white-color;
       a:link, a:active, a:visited {
         display: block;
-        font-family: FacitWeb;
+        @include sans-serif-font;
         width: 100%;
         height: 100%;
         color: white;
@@ -69,8 +100,62 @@ nav {
   }
 }
 
+footer {
+  background-color: white;
+  border-top: #dfdfdf solid 1px;
+  padding-left: 10.4166667%;
+  padding-right: 16.66666667%;
+  padding-top: 35px;
+
+  p {
+    font-size: 14px;
+  }
+
+  p.contact  {
+    line-height: 1.4em;
+    strong {
+      font-size: 20px;
+    }
+  }
+
+  p:nth-child(5) {
+      margin-bottom: 265px;
+  }
+
+  p:last-child {
+      margin-bottom: 15px;
+  }
+
+  aside {
+    float: right;
+    h4 {
+      @include serif-font;
+      font-size: 24px;
+      font-style: italic;
+      font-weight: lighter;
+      margin-bottom: 30px;
+    }
+    ul {
+      list-style-type: none;
+      li {
+        margin-bottom: 15px;
+      }
+      li:last-child {
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+strong {
+  color: $medium-red-color;
+  @include sans-serif-font;
+  font-weight: bold;
+}
+
 h1 {
-  font-family: LaptureWeb-Display;
+  @include serif-font;
   font-size: 36px;
   color: #545454;
 }
