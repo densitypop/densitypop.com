@@ -73,6 +73,7 @@ nav {
         color: white;
         font-size: 2.625em;
         text-decoration: none;
+        text-shadow: rgba(0, 0, 0, .75) 2px 2px 1px;
       }
       &.blog {
         background: url(/images/button-gradient.png) top left repeat-x,
@@ -84,6 +85,7 @@ nav {
                     url(/images/matte-button-speaking.png);
         a:link, a:active, a:visited {
           color: #222;
+          text-shadow: rgba(0, 0, 0, .32) 2px 2px 1px;
         }
       }
       &.about {
